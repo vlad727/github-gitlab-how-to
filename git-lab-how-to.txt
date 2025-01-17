@@ -3,3 +3,8 @@ PAT представляет собой уникальный токен, кот�
 
 ### How to clone ###
 git clone https://oauth2:<your_access_token>@gitlab.example.com/your_username/your_project.git
+
+### Private gitlab ###
+git clone https://gitlab.apps.<your-gitlab-fqdn>/<your-login-from-gitlab>/manager-crbc.git
+Note: this command will ask username and PAT
+
