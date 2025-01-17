@@ -13,3 +13,8 @@ git status
 git add . 
 git commit -m <your-comment>
 git push -u -f origin master 
+
+### if you have an error below ###
+fatal: the remote end hung up unexpectedly
+### resolution ###
+git config --global http.postBuffer 262144000
