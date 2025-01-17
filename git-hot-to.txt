@@ -1,0 +1,11 @@
+### for new machine or after reinstall
+git config --global user.name <yourname>
+git config --global user.email <your-email@smt.ok>
+
+### how to set your private ssh key 
+### create file ~/.ssh/config and put data below
+Host github.com
+       HostName github.com
+       User git
+       IdentityFile ~/.ssh/private_key_name
+   
