@@ -18,3 +18,11 @@ git push -u -f origin master
 fatal: the remote end hung up unexpectedly
 ### resolution ###
 git config --global http.postBuffer 262144000
+
+### work with new branch ### 
+# Переход на основную ветку (например, main)
+git checkout main
+
+# Создание новой ветки и переход на нее
+git checkout -b new_feature
+
