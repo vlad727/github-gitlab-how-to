@@ -1,2 +1,5 @@
 Personal Access Tokens (PAT) в GitLab — это способ аутентификации для доступа к API GitLab или другим ресурсам через HTTP/HTTPS запросы без необходимости использования пароля. 
 PAT представляет собой уникальный токен, который генерируется пользователем и может использоваться вместо логина и пароля при взаимодействии с GitLab.
+
+### How to clone ###
+git clone https://oauth2:<your_access_token>@gitlab.example.com/your_username/your_project.git
