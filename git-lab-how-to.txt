@@ -8,3 +8,8 @@ git clone https://oauth2:<your_access_token>@gitlab.example.com/your_username/yo
 git clone https://gitlab.apps.<your-gitlab-fqdn>/<your-login-from-gitlab>/manager-crbc.git
 Note: this command will ask username and PAT
 
+### Main commands almost the same as for github ###
+git status
+git add . 
+git commit -m <your-comment>
+git push -u -f origin master 
