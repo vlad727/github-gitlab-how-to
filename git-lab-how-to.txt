@@ -29,6 +29,13 @@ git checkout main
 # Создание новой ветки и переход на нее
 git checkout -b new_feature
 
+### about names for new branch ###
+# it may be name of company + number issue example below
+site-or-company/OSAD-123412
+team-name/number-issue-31131
+# you can create new branch from another branch (create new branch from master) min two words in new branch
+git checkout -n team-name/number-issue-31131 master 
+
 ### how to merge branch to main ###
 git checkout main
 # recomendation before merge 
