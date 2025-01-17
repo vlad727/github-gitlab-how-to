@@ -26,7 +26,18 @@ git config --global http.postBuffer 262144000
 ### work with new branch ### 
 # Переход на основную ветку (например, main)
 git checkout main
-
 # Создание новой ветки и переход на нее
 git checkout -b new_feature
+
+### how to merge branch to main ###
+git checkout main
+# recomendation before merge 
+git pull origin main
+# merge
+git merge feature_branch
+# conflict 
+git add <конфликтующий_файл>
+git commit -m "Resolved conflicts during merge"
+# push to main
+git push origin main
 
