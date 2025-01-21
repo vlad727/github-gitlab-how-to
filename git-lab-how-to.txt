@@ -48,3 +48,11 @@ git commit -m "Resolved conflicts during merge"
 # push to main
 git push origin main
 
+### How to merge banches gitlab ###
+git checkout -b version ### new branch with name "version"
+git status ### chek status 
+... ### some changes in code 
+git add . ### add all changes
+git commit -m "Added comments to version.go" ### commit changes
+git push origin version ### push to gitlab
+### then via web interface create merge request and merge it 
