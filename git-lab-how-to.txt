@@ -56,3 +56,13 @@ git add . ### add all changes
 git commit -m "Added comments to version.go" ### commit changes
 git push origin version ### push to gitlab
 ### then via web interface create merge request and merge it 
+### after merge code need to do local sync
+git checkout master
+git pull origin master 
+### local branch will contain all changes 
+### delete branches localy 
+git branch -d feature/branch-name
+### delete branch remoute 
+git push origin --delete feature/branch-name
+### clean local data
+git gc
