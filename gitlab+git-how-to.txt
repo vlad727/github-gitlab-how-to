@@ -77,4 +77,5 @@ git log --oneline
 git revert -m 1 71d5802
 ### revert second commit
 git revert -m 1 71d5802
+### after local revert just create new branch and merge it with master
 
