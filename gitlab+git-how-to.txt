@@ -69,4 +69,12 @@ git push origin --delete feature/branch-name
 ### clean local data
 git gc
 
+# How to revert changes 
+### show logs in one line
+git log --oneline
+### discard changes one by one
+### revert first commit
+git revert -m 1 71d5802
+### revert second commit
+git revert -m 1 71d5802
 
