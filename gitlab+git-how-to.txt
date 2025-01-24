@@ -1,14 +1,16 @@
+
+# PAT
 Personal Access Tokens (PAT) в GitLab — это способ аутентификации для доступа к API GitLab или другим ресурсам через HTTP/HTTPS запросы без необходимости использования пароля. 
 PAT представляет собой уникальный токен, который генерируется пользователем и может использоваться вместо логина и пароля при взаимодействии с GitLab.
 
-### How to clone ###
+# How to clone 
 git clone https://oauth2:<your_access_token>@gitlab.example.com/your_username/your_project.git
 
-### Private gitlab ###
+# Private gitlab 
 git clone https://gitlab.apps.<your-gitlab-fqdn>/<your-login-from-gitlab>/manager-crbc.git
 Note: this command will ask username and PAT
 
-### Main commands almost the same as for github ###
+# Main commands almost the same as for github
 git status
 git add . 
 git commit -m <your-comment>
@@ -18,37 +20,37 @@ git branch -M master
 git push -uf origin master
 
 
-### if you have an error below ###
+# If you have an error below 
 fatal: the remote end hung up unexpectedly
 ### resolution ###
 git config --global http.postBuffer 262144000
 
-### work with new branch ### 
-# Переход на основную ветку (например, main)
+# Work with new branch 
+### Переход на основную ветку (например, main)
 git checkout main
-# Создание новой ветки и переход на нее
+### Создание новой ветки и переход на нее
 git checkout -b new_feature
 
-### about names for new branch ###
-# it may be name of company + number issue example below
+# About names for new branch 
+### it may be name of company + number issue example below
 site-or-company/OSAD-123412
 team-name/number-issue-31131
-# you can create new branch from another branch (create new branch from master) min two words in new branch
+### you can create new branch from another branch (create new branch from master) min two words in new branch
 git checkout -n team-name/number-issue-31131 master 
 
-### how to merge branch to main ###
+# How to merge branch to main #
 git checkout main
-# recomendation before merge 
+### recomendation before merge 
 git pull origin main
-# merge
+### merge
 git merge feature_branch
-# conflict 
+### conflict 
 git add <конфликтующий_файл>
 git commit -m "Resolved conflicts during merge"
-# push to main
+### push to main
 git push origin main
 
-### How to merge banches gitlab ###
+# How to merge banches gitlab #
 git checkout -b version ### new branch with name "version"
 git status ### chek status 
 ... ### some changes in code 
@@ -66,3 +68,5 @@ git branch -d feature/branch-name
 git push origin --delete feature/branch-name
 ### clean local data
 git gc
+
+
