@@ -79,3 +79,14 @@ git revert -m 1 71d5802
 git revert -m 1 71d5802
 ### after local revert just create new branch and merge it with master
 
+# Add your code o gitlab with temp dir 
+## commands 
+mkdir temp 
+cd temp
+git clone https://gitlab.apps.k8s.<your-remoute-gitlab>/<username>/grabber-mongodb.git
+cd grabber-mongodb/
+cp -r ../../grabber-mongodb/* .
+git add .
+git commit -m "Grabber and mongodb first push code to gitlab"
+git push origin master
+
