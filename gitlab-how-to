@@ -1,0 +1,12 @@
+# How to push code to gitlab (prod-01 test name for our private gitlab)
+1. Generate key with command ssh-keygen -t ed25519 -C "prod-01-gitlab"
+2. Fix config with new key 
+Host gitlab-prod-01
+       HostName gitlab.apps.k8s.prod-01.example.com
+       User git
+       IdentityFile ~/.ssh/id_ed25519
+3. Create project does not matter private, public in your space
+4. Clone it to local machine git clone git clone ssh://git@gitlab.apps.k8s.prod-01.example.com:30022/your_username/cluster-checker.git
+5. git add .
+6. git commit -m "First commit"
+7. git push origin master
