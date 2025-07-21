@@ -10,3 +10,9 @@ Host gitlab-prod-01
 5. git add .
 6. git commit -m "First commit"
 7. git push origin master
+
+# Another way 
+1. cd existing_repo
+2. git remote add origin https://gitlab.apps.k8s.prod-01.example.com/your_username/manager-ns.git
+3. git branch -M master
+4. git push -uf origin master
