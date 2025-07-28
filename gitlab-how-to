@@ -1,5 +1,5 @@
 # How to push code to gitlab (prod-01 test name for our private gitlab)
-1. Generate key with command ssh-keygen -t ed25519 -C "prod-01-gitlab"
+1. Generate key with command ssh-keygen -t ed25519 -C "prod-01-gitlab" or with name output file ssh-keygen -t ed25519 -f ose-prod-gitlab -C "ose-prod-gitlab"
 2. Fix config with new key 
 Host gitlab-prod-01
        HostName gitlab.apps.k8s.prod-01.example.com
